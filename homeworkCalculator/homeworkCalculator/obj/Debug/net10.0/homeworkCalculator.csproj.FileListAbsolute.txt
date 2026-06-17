@@ -12,3 +12,4 @@
 /Users/macbook/Desktop/homework16.06.2026/homeworkCalculator/homeworkCalculator/obj/Debug/net10.0/homeworkCalculator.pdb
 /Users/macbook/Desktop/homework16.06.2026/homeworkCalculator/homeworkCalculator/obj/Debug/net10.0/homeworkCalculator.genruntimeconfig.cache
 /Users/macbook/Desktop/homework16.06.2026/homeworkCalculator/homeworkCalculator/obj/Debug/net10.0/ref/homeworkCalculator.dll
+/Users/macbook/Desktop/homework16.06.2026/homeworkCalculator/homeworkCalculator/obj/Debug/net10.0/homeworkCalculator.sourcelink.json

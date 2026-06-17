@@ -61,11 +61,37 @@ while (true)
         break;
     }
 
+    while (true)
+    {
+        Console.WriteLine("Do you want to enter another operation? (y/n)");
+        string answer = Console.ReadLine().ToLower();
+        if (answer == "y" || answer == "yes" || answer == "ye" || answer == "yess"
+            || answer == "yep" || answer == "yeah" || answer == "he" || answer == "hee")
+        {
+            Console.Clear();
+            Console.WriteLine("You chose another operation.");
+        }
+        else if (answer == "n" || answer == "no" || answer == "nope" || answer == "nah" 
+                 || answer == "nao"  || answer == "yox" || answer == "yo")
+        {
+            Console.Clear();
+            Console.WriteLine("Goodbye :("); 
+            Environment.Exit(0); // prgram baglamag ucun 
+        }
+        else 
+        {
+            Console.Clear();  // temiz konsol
+            Console.WriteLine("Please enter valid operations (y/n)");
+            continue;
+        }
+        break;
+    }
     // Console.WriteLine("Press any key to continue...");
     // Console.ReadKey();
     // Console.Clear();
-    
+    //Console.WriteLine("\nGoodbye :(");
 }
+
     
 
 
