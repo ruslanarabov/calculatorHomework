@@ -14,7 +14,19 @@ while (true)
             continue;
         } break;
     }Console.Clear(); // konsol temiz
-
+    
+    while (true)
+    {
+        Console.WriteLine("Enter the operation:\n + (plus)\n - (minus)\n * (multiply)\n / (divided)");
+        operation = Console.ReadLine();
+        if (operation != "+" && operation != "-" && operation != "*" && operation != "/")
+        {
+            Console.Clear();  // temiz konsol 
+            Console.WriteLine("Please enter valid operations");
+            continue;
+        }
+        break;
+    }
     while (true)
     {
         Console.WriteLine("Enter the second number:");
@@ -25,42 +37,30 @@ while (true)
             continue;
         } break;
     }Console.Clear(); // konsol temiz
-
-    while (true)
+    
+    if (operation == "+")
     {
-        Console.WriteLine("Enter the operation:\n + (plus)\n - (minus)\n * (multiply)\n / (divided)");
-        operation = Console.ReadLine();
-        if (operation == "+")
+        Console.WriteLine($"The result is: {num1 + num2}");
+    }
+    else if (operation == "-")
+    {
+        Console.WriteLine($"The result is: {num1 - num2}");
+    }
+    else if (operation == "*")
+    {
+        Console.WriteLine($"The result is: {num1 * num2}");
+    }
+    else if (operation == "/")
+    {
+        if (num2 == 0)
         {
-            Console.WriteLine($"The result is: {num1 + num2}");
-        }
-        else if (operation == "-")
-        {
-            Console.WriteLine($"The result is: {num1 - num2}");
-        }
-        else if (operation == "*")
-        {
-            Console.WriteLine($"The result is: {num1 * num2}");
-        }
-        else if (operation == "/")
-        {
-            if (num2 == 0)
-            {
-                Console.Clear();  // temiz konsol
-                Console.WriteLine("Error: Division by zero is not allowed.");
-                continue;
-            }
-            Console.WriteLine($"The result is: {num1 / num2}");
-        }
-        else if (operation != "+" && operation != "-" && operation != "*" && operation != "/")
-        {
-            Console.Clear();  // temiz konsol 
-            Console.WriteLine("Please enter valid operations");
+            Console.Clear();  // temiz konsol
+            Console.WriteLine("Error: Division by zero is not allowed.");
             continue;
         }
-        break;
+        Console.WriteLine($"The result is: {num1 / num2}");
     }
-
+    
     while (true)
     {
         Console.WriteLine("Do you want to enter another operation? (y/n)");
@@ -86,10 +86,6 @@ while (true)
         }
         break;
     }
-    // Console.WriteLine("Press any key to continue...");
-    // Console.ReadKey();
-    // Console.Clear();
-    //Console.WriteLine("\nGoodbye :(");
 }
 
     
